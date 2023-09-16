@@ -1,0 +1,9 @@
+services:
+  bandaid_api:
+    build: ./bandaid_api/
+    ports:
+      - "3000:3000"
+  bandaid_db:
+    build: ./database/
+    ports:
+      - "5432:5432"
